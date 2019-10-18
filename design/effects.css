@@ -1,0 +1,27 @@
+/* use this for all HTML files */
+
+.space {
+    width: 2px;
+    height: 1px;
+}
+
+.topnav {
+    background-color: #23272A;
+    overflow: hidden;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'B612 Mono', monospace;
+}
+.topnav a:hover {
+    background-color: #7289DA;
+    color: #23272A;
+}
+.topnav a.active {
+    color: white;
+}

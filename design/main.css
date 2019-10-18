@@ -1,0 +1,224 @@
+
+html {
+    animation-name: moving;
+    animation-iteration-count: 1;
+    animation-duration: 2.5s;
+}
+body {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(197, 200, 1) 0%, rgb(242, 70, 70) 100.2% );
+    margin: 0;
+}
+@keyframes moving {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes rainbow {
+    0%, 14.285714285714286% {
+        color: rgb(148, 2, 128)
+    }
+    14.285714285714286%, 28.571428571428573% {
+        color: rgb(82, 85, 252)
+    }
+    28.571428571428573%, 42.85714285714286% {
+        color: rgb(242, 70, 70)
+    }
+    42.85714285714286%, 57.142857142857146% {
+        color: rgb(34, 115, 126)
+    }
+    57.142857142857146%,  71.42857142857143% {
+        color: rgb(197, 200, 1)
+    }
+    71.42857142857143%, 85.71428571428572% {
+        color: rgb(82, 232, 252)
+    }
+    85.71428571428572%, 100% {
+        color: rgb(20, 233, 13)
+    }
+    100% {
+        color: rgb(148, 2, 128)
+    }
+}
+
+@keyframes rainfeat {
+    0% {background-image: linear-gradient(to right, rgb(41, 99, 170) , rgb(116, 174, 255))}
+    0.1% {background-image: linear-gradient(to right, rgb(53, 125, 212) , rgb(173, 207, 255)); }
+}
+
+.avatar {
+    margin: 20px 25px;
+    padding: 5px;
+    display: inline;
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px rgb(34, 44, 99);
+    background: no-repeat scroll 50px 50px;
+}
+.avatar:hover {
+    animation: moving2 2s infinite;
+}
+.title {
+    margin: 25px;
+    -webkit-text-stroke: 3px rgb(255, 255, 255);
+    display: inline;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 145px;
+    animation: rainbow 3s infinite;
+}
+.slogan {
+    margin: 25px;
+}
+#home { 
+    margin: 20px 80px;
+}
+#features {
+    font-family: 'Russo One', sans-serif;
+    font-size:  65px;
+    text-align: center;
+}
+.features {
+    color: white;
+}
+.features ul {
+    overflow: hidden;
+    display: block;
+    list-style: none;
+}
+.features li {
+    box-shadow: 10px 10px 10px rgb(20, 20, 20);
+    border: 20px;
+    margin: 10px;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, rgb(52, 170, 41) , rgb(243, 116, 255));
+    text-align: center;
+    padding: 30px;
+    float: left;
+}
+.features li:hover {
+    animation: rainfeat 2s 1;
+}
+.features img {
+    -webkit-filter: brightness(1) invert(0);
+    filter: brightness(1) invert(0);
+    width: 110px;
+    height: 110px;
+}
+#features a {
+    color: inherit;
+    text-decoration: none;
+}
+.slogan {
+    color: white;
+    font-family: 'B612 Mono', monospace;
+}
+#commands {
+    font-family: 'Russo One', sans-serif;
+    font-size:  65px;
+    text-align: center;
+}
+.commands {
+    color: white;
+}
+.commands ul {
+    overflow: hidden;
+    display: block;
+    list-style: none;
+}
+
+.commands li {
+    box-shadow: 10px 10px 10px rgb(20, 20, 20);
+    border: 20px;
+    margin: 10px;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, rgb(41, 99, 170) , rgb(116, 174, 255));
+    text-align: middle;
+    padding: 30px;
+    float: left;
+}
+.commands li:hover {
+    animation: rainfeat 2s 1;
+}
+.commands img {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+    width: 110px;
+    height: 110px;
+}
+#commands a {
+    color: inherit;
+    text-decoration: none;
+}
+#bot_information {
+    font-family: 'Russo One', sans-serif;
+    font-size:  65px;
+    text-align: center;
+}
+.bot_information {
+    color: white;
+}
+.bot_information ul {
+    overflow: hidden;
+    display: block;
+    list-style: none;
+}
+.bot_information li {
+    box-shadow: 10px 10px 10px rgb(20, 20, 20);
+    border: 20px;
+    margin: 10px;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, rgb(170, 41, 41) , rgb(116, 234, 255));
+    text-align: middle;
+    padding: 30px;
+    float: left;
+}
+.bot_information li:hover {
+    animation: rainfeat 2s 1;
+}
+.bot_information img {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+    width: 110px;
+    height: 110px;
+}
+#bot_information a {
+    color: inherit;
+    text-decoration: none;
+}
+.button {
+    border-radius: 4px;
+    background-color: #7289DA;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+  
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+  
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
